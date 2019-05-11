@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Estate 3D</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  </head>
+  <body>
+    <script type="text/javascript" src="scripts/three.min.js" defer></script>
+    <script type="text/javascript" src="scripts/WebGL.js" defer></script>
+    <script type="text/javascript" src="scripts/TDSLoader.js" defer></script>
+    <script type="text/javascript" src="scripts/OrbitControls.js" defer></script>
+    <section class="background_wrapper">
+      <div class="background_image"></div>
+    </section>
+    <header>
+      <div class="header_outer">
+        <div class="header_logo">
+          <a href="#" target="_blank"><img src="images/logo_min.png" alt=""></a>
+        </div>
+        <ul class="header_inner div_left">
+          <li><a href="#" target="_blank">Buy</a></li>
+          <li><a href="#" target="_blank">Rent</a></li>
+          <li><a href="#" target="_blank">Sell</a></li>
+          <li><a href="#" target="_blank">Home Loans</a></li>
+          <li><a href="#" target="_blank">Agent finder</a></li>
+        </ul>
+        <ul class="header_inner div_right">
+          <li><a href="#" target="_blank">List your rental</a></li>
+          <li><a href="#" target="_blank">Advertise</a></li>
+          <li><a href="#" target="_blank">Sign In</a></li>
+          <li><a href="#" target="_blank">Join Us</a></li>
+          <li><a href="#" target="_blank">Help</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="content_wrapper">
+      <div class="content">
+        <h1>Find a place you’ll love.</h1>
+        <input type="text" name="" value="" placeholder="Enter an address, neighborhood, city, or ZIP code">
+        <div class="items_wrapper">
+          <ul class="items">
+            <li class="item">
+              <div class="item_block">
+                <img src="images/item01.png" alt="">
+              </div>
+              <div class="item_block">
+                <div class="item_block_header">
+                  <a href="#" target="_blank">
+                    <span class="share">Share</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="save">Save</span>
+                  </a>
+                  <hr>
+                </div>
+                <div class="item_block_body">
+                  <p><span class="price">$1,200</span><b>/mo</b> <b>3</b> bd | <b>2</b> ba | <b>1 191</b> sqft</p>
+                  <p><b>1719 N Avenue O, Freeport, TX 77541</b></p>
+                  <p><b>House for rent</b> | <b>Rent Zestimate:</b> $1200</p>
+                  <button type="button" name="button" class="item_btn white show_btn" id="open01">Show more</button>
+                  <button type="button" name="button" class="item_btn blue">Request a tour</button>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_block">
+                <img src="images/item02.png" alt="">
+              </div>
+              <div class="item_block">
+                <div class="item_block_header">
+                  <a href="#" target="_blank">
+                    <span class="share">Share</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="save">Save</span>
+                  </a>
+                  <hr>
+                </div>
+                <div class="item_block_body">
+                  <p><span class="price">$1,500</span><b>/mo</b> <b>1</b> bd | <b>1</b> ba | <b>798</b> sqft</p>
+                  <p><b>5901 163rd St, Fresh Meadows, NY 11365</b></p>
+                  <p><b>House for rent</b> | <b>Rent Zestimate:</b> $2,090</p>
+                  <button type="button" name="button" class="item_btn white show_btn" id="open02">Show more</button>
+                  <button type="button" name="button" class="item_btn blue">Request a tour</button>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_block">
+                <img src="images/item03.png" alt="">
+              </div>
+              <div class="item_block">
+                <div class="item_block_header">
+                  <a href="#" target="_blank">
+                    <span class="share">Share</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="save">Save</span>
+                  </a>
+                  <hr>
+                </div>
+                <div class="item_block_body">
+                  <p><span class="price">$2,800</span><b>/mo</b> <b>3</b> bd | <b>1</b> ba | <b>1 500</b> sqft</p>
+                  <p><b>Brown St, Brooklyn, NY 11235</b></p>
+                  <p><b>House for rent</b></p>
+                  <button type="button" name="button" class="item_btn white show_btn" id="open03">Show more</button>
+                  <button type="button" name="button" class="item_btn blue">Request a tour</button>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item_block">
+                <img src="images/item04.png" alt="">
+              </div>
+              <div class="item_block">
+                <div class="item_block_header">
+                  <a href="#" target="_blank">
+                    <span class="share">Share</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="save">Save</span>
+                  </a>
+                  <hr>
+                </div>
+                <div class="item_block_body">
+                  <p><span class="price">$2,600</span><b>/mo</b> <b>2</b> bd | <b>1</b> ba | <b>1 100</b> sqft</p>
+                  <p><b>86 Oregon St, Long Beach, NY 11561</b></p>
+                  <p><b>House for rent</b> | <b>Rent Zestimate:</b> $2,600</p>
+                  <button type="button" name="button" class="item_btn white show_btn" id="open04">Show more</button>
+                  <button type="button" name="button" class="item_btn blue">Request a tour</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="mod_window" id="modw">
+      <div class="webgl_wrapper">
+        <div id="WebGL-output"></div>
+        <div class="webgl_help">
+          Use mouse for navigation
+        </div>
+      </div>
+      <div class="mod_window_content">
+        <div class="mod_window_content_header">
+          <a href="#" target="_blank">
+            <span class="share">Share</span>
+          </a>
+          <a href="#" target="_blank">
+            <span class="save">Save</span>
+          </a>
+        </div>
+        <div class="mod_window_content_body">
+          <div class="left_half">
+            <div class="mod_block_price">
+              <span class="price">$2,600</span><b>/mo</b> <b>2</b> bd | <b>1</b> ba | <b>1 100</b> sqft
+            </div>
+            <div class="mod_block">
+              <p><b>86 Oregon St, Long Beach, NY 11561</b></p>
+              <p><b>House for rent</b> | <b>Rent Zestimate:</b> $2,600</p>
+              <p><b>Last 30-day change: </b>+%5/mo (+0.4%) </p>
+            </div>
+          </div>
+          <div class="right_half">
+            <div class="mod_block_price">
+              <span><b>Description:</b></span>
+            </div>
+            <div class="mod_block">
+              <p>Nice rental home in a nice neighborhood!  Home has 3 bedrooms, 2 full bathrooms and 2 car attached garage!  It has a recent central A/C! Large living room! Home is located near, stores, restaurants and parks!  Call now to view or rent out this home!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mod_window_content_footer">
+          <div class="mod_btn_wrapper">
+            <button type="button" name="button" class="mod_btn blue">Apply now</button>
+            <button type="button" name="button" class="mod_btn gray" id="modw_cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="scripts/app.js" defer></script>
+    <script type="text/javascript" src="scripts/backblur.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,386 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: white;
+}
+
+.header_outer {
+  height: 100%;
+  width: 1360px;
+  margin: auto;
+  position: relative;
+}
+
+.header_outer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header_outer ul li {
+  list-style-type: none;
+  padding: 0px 20px;
+  line-height: 80px;
+}
+
+.header_outer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header_outer ul li a:hover {
+  color: #006aff;
+}
+
+.header_outer .header_logo {
+  height: 100%;
+  position: absolute;
+  left: calc(50% - 150px);
+}
+
+.header_inner {
+  height: 100%;
+  display: flex;
+}
+
+.div_left {
+  /*background: #aa0000;*/
+  float: left;
+}
+
+.div_right {
+  /*background: #0000aa;*/
+  float: right;
+}
+
+section.background_wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  top: 0;
+  overflow: hidden;
+}
+
+div.background_image {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  /* z-index: -10; */
+  top: 0;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+section.content:hover {
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
+.content_wrapper {
+  margin-top: 60px;
+}
+
+.content {
+  width: 1360px;
+  margin: auto;
+  /* background: white; */
+}
+
+.content h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+  margin-top: 14px;
+  margin-bottom: 42px;
+  text-align: center;
+  color: white;
+}
+
+.content input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  height: 50px;
+  width: 640px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 14px auto 42px auto;
+  padding: 0 65px 0 20px;
+  background-image: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right 20px center;
+  border: none;
+  border-radius: 3px;
+}
+
+.items_wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.items_wrapper ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.items_wrapper ul li {
+  height: 160px;
+  width: 500px;
+  list-style-type: none;
+  background: #eee;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  display: flex;
+}
+
+.item_block {
+  height: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.item_block:first-child {
+  width: 160px;
+}
+
+.item_block:last-child {
+  width: 340px;
+}
+
+.item_block img {
+  height: 100%;
+}
+
+.item_block_header {
+  height: 30px;
+  background-image: url('../images/logo_min.png');
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: top -10px left -40px;
+  position: relative;
+}
+
+.item_block_header span {
+  float: right;
+  margin-left: 10px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.item_block_header span:hover {
+  font-weight: bold;
+}
+
+span.share {
+  background-image: url('../images/next.png');
+}
+
+span.save {
+  background-image: url('../images/heart.png');
+}
+
+.item_block_header hr {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 2px;
+}
+
+.item_block_body p {
+  margin: 3px 0;
+}
+
+.item_block_body p span.price {
+  font-size: 26px;
+}
+
+.item_btn {
+  height: 28px;
+  width: 150px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.item_btn:hover {
+  cursor: pointer;
+}
+
+.white {
+  background-color: #eee;
+  color: #006aff;
+}
+
+.white:hover {
+  background-color: #ddd;
+}
+
+.blue {
+  background-color: #3333ff;
+  color: white;
+  transition: 0.2s;
+}
+
+.blue:hover {
+  background-color: white;
+  color: #3333ff;
+}
+
+.mod_window {
+  height: 400px;
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  position: absolute;
+  margin: auto;
+  top: 310px;
+  left: calc(50% - 600px);
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0.0;
+  transform: scale(0.1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.webgl_wrapper {
+  height: 360px;
+  width: 360px;
+  position: absolute;
+}
+
+.webgl_wrapper .webgl_help {
+  height: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+}
+
+.WebGL-output {
+  height: 360px;
+  width: 360px;
+}
+
+.mod_window_content {
+  height: 360px;
+  width: 780px;
+  position: absolute;
+  left: 400px;
+  /* background: blue; */
+}
+
+.mod_window_content_header {
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px inset #ccc;
+  background-image: url('../images/logo_min.png');
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center left -70px;
+  position: relative;
+}
+
+.mod_window_content_header span {
+  float: right;
+  margin-left: 10px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left center;
+  line-height: 60px;
+}
+
+.mod_window_content_header span:hover {
+  font-weight: bold;
+}
+
+.mod_window_content_body {
+  height: 240px;
+  width: 100%;
+}
+
+.left_half {
+  width: 50%;
+  float: left;
+}
+
+.right-half {
+  width: 50%;
+  float: right;
+}
+
+.mod_block {
+  width: 100%;
+  height: 165px;
+  /* background: #aaffaa; */
+  font-size: 15px;
+}
+
+.mod_block_price {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  /* background: #aaffaa; */
+  font-size: 15px;
+  line-height: 60px;
+}
+
+.mod_block_price .price {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.mod_window_content_footer {
+  height: 60px;
+  width: 100%;
+  /* background: lightblue; */
+}
+
+.mod_btn_wrapper {
+  height: 40px;
+  /* background: lightgreen; */
+  padding-top: 20px;
+  float: right;
+}
+
+.mod_btn {
+  height: 40px;
+  width: 180px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.mod_btn:hover {
+  cursor: pointer;
+}
+
+.gray {
+  background: #ccc;
+  color: #555;
+  transition: 0.2s;
+}
+
+.gray:hover {
+  background: #eee;
+  color: black;
+}
