@@ -45,7 +45,7 @@ plane.rotation.x=-0.5*Math.PI;
 scene.add(plane);
 
 var loader = new THREE.TDSLoader();
-loader.load('mod/wukk17xbcutc-House/Gost House/3D models/Gost House (1).3DS', (obj) => {
+loader.load('mod/wukk17xbcutc-house/gost_house/3d_models/gost_house.3ds', (obj) => {
 	obj.scale.x = 0.015;
 	obj.scale.y = 0.015;
 	obj.scale.z = 0.015;

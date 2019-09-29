@@ -45,7 +45,7 @@ plane.rotation.x=-0.5*Math.PI;
 scene.add(plane);
 
 var loader = new THREE.TDSLoader();
-loader.load('mod/lu9y7fwbjklc-barrack/barrack/Models/3Ds/dom.3DS', (obj) => {
+loader.load('mod/lu9y7fwbjklc-barrack/barrack/models/3ds/dom.3ds', (obj) => {
 	obj.scale.x = 0.05;
 	obj.scale.y = 0.05;
 	obj.scale.z = 0.05;

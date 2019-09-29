@@ -20,7 +20,7 @@ for (let elem of btn_array) {
     let model = {};
     switch (e.srcElement.id) {
       case 'open01':
-        model.path = 'mod/wukk17xbcutc-House/Gost House/3D models/Gost House (1).3DS';
+        model.path = 'mod/wukk17xbcutc-house/gost_house/3d_models/gost_house.3ds';
         model.scale = 0.015;
         model.posX = -4;
         model.posY = -2;
@@ -31,7 +31,7 @@ for (let elem of btn_array) {
         model.hiddenChildren = 1;
         break;
       case 'open02':
-        model.path = 'mod/lu9y7fwbjklc-barrack/barrack/Models/3Ds/dom.3DS';
+        model.path = 'mod/lu9y7fwbjklc-barrack/barrack/models/3ds/dom.3ds';
         model.scale = 0.05;
         model.posX = null;
         model.posY = -1.1;
@@ -51,7 +51,7 @@ for (let elem of btn_array) {
         model.rotZ = 0.25*Math.PI;
         break;
       case 'open04':
-        model.path = 'mod/villa5.3ds';
+        model.path = 'mod/bmfrzkal1iio-vb56/villa.3ds';
         model.scale = 0.05;
         model.posX = null;
         model.posY = -0.75;

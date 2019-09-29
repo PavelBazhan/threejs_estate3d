@@ -13,12 +13,8 @@ renderer.shadowMapSoft = true;
 let renderOuter = document.getElementById('WebGL-output');
 renderOuter.appendChild( renderer.domElement );
 
-//controls settings
 var controls = new THREE.OrbitControls(camera, document.getElementById('WebGL-output'));
 controls.addEventListener('change, render');
-
-// var axes = new THREE.AxisHelper( 20 );
-// scene.add(axes);
 
 var spotLight = new THREE.SpotLight( 0xffffff, 2, 70, 0.8, 0.5, 1.5 );
 spotLight.castShadow = true;
@@ -42,24 +38,6 @@ plane.castShadow = true;
 plane.position.y = -1;
 plane.rotation.x=-0.5*Math.PI;
 scene.add(plane);
-
-/*var loader = new THREE.TDSLoader();
-loader.load('mod/villa5.3ds', (obj) => {
-	obj.castShadow = true;
-	obj.scale.x = 0.05;
-	obj.scale.y = 0.05;
-	obj.scale.z = 0.05;
-	obj.position.y = -0.75;
-	obj.rotation.x = -0.5*Math.PI;
-	obj.rotation.z = 0.25*Math.PI;
-	obj.traverse((child) => {
-		if (child instanceof THREE.Mesh) {
-			child.castShadow = true;
-			child.receiveShadow = true;
-		}
-	});
-	scene.add(obj);
-});*/
 
 function animate() {
   requestAnimationFrame( animate );
